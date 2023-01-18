@@ -1,0 +1,15 @@
+---
+foo: "bar"
+baz: "qux"
+pi: 3.14159
+some_bool: true
+some_array:
+  - item1
+  - item2
+  - item3
+  - item4
+some_nesting:
+  object_1:
+    count: 1
+    location: "my house"
+  some_nested_val: two
