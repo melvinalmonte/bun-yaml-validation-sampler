@@ -2,6 +2,7 @@ import fs from "fs";
 import yaml from "js-yaml";
 import { z } from "zod";
 
+// Sample schema
 const configSchema = z.object({
   foo: z.string().min(1),
   baz: z.string().min(1),
@@ -17,6 +18,7 @@ const configSchema = z.object({
   }),
 });
 
+// Yaml file loader and converter to object
 const formObject = () => {
   try {
     console.log("Reading config.yaml");
@@ -30,6 +32,7 @@ const formObject = () => {
   }
 };
 
+// Main function and validation logic
 const main = () => {
   const config = formObject();
 
